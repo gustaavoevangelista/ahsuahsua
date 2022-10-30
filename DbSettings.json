@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "MyDbContext": "server=localhost;port=3306;database=gestao;user=gustavo;password=d-linkk71"
+  }
+}

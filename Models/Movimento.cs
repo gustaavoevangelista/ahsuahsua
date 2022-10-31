@@ -7,6 +7,9 @@ namespace Final_Project_2._1.Models
     {
         [Key]
         public int Id_mov { get; set; }
+
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime Data_hora { get; set; }
         public float Importancia { get; set; }
         
@@ -15,7 +18,7 @@ namespace Final_Project_2._1.Models
         public virtual int ClienteId { get; set; }
 
         [ForeignKey("ClienteId")]
-        public virtual Cliente Clientes { get; set; }
+        public virtual Cliente? Cliente { get; set; }
 
 
     }

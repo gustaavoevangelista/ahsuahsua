@@ -54,7 +54,7 @@ namespace Final_Project_2._1.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Clientes");
+                    b.ToTable("Clientes", (string)null);
                 });
 
             modelBuilder.Entity("Final_Project_2._1.Models.Movimento", b =>
@@ -76,7 +76,7 @@ namespace Final_Project_2._1.Migrations
 
                     b.HasIndex("ClienteId");
 
-                    b.ToTable("Movimentos");
+                    b.ToTable("Movimentos", (string)null);
                 });
 
             modelBuilder.Entity("Final_Project_2._1.Models.Movimento", b =>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4fPzYK5xdfxTSXsqLi8vLkG/wqZiSv+aeO6EZVSOia0G1b/7UPZXU0bBtlCaOoUaNx6yykbjyF2Y+ISRxCIrtg==",
+  "dgSpecHash": "/wNp9M17g550D5vQx9euHpHGUfdg9dtyj4wcocedaHIyWgQq1ztDo9S355gLROh/58/JavzlT7Fv6wcBQm4byA==",
   "success": true,
   "projectFilePath": "C:\\Users\\gusta\\PROJETOS\\C#\\Final_Project_2.1\\Final_Project_2.1\\Final_Project_2.1.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\gusta\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\gusta\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.10\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.10.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\microsoft.build\\17.0.0\\microsoft.build.17.0.0.nupkg.sha512",

@@ -9,6 +9,7 @@ namespace Final_Project_2._1.Models
         [Key]
         public int id { get; set; }
 
+        [StringLength(50)]
         public string? nome { get; set; }
         public string? morada { get; set; }
         public string? codPostal { get; set; }
@@ -18,6 +19,7 @@ namespace Final_Project_2._1.Models
         public int nif { get; set; }
         public float saldoDisp { get; set; }
         public DateTime validade { get; set; }
+        public ICollection<Movimento> Movimentos { get; set; }
 
     }
 }

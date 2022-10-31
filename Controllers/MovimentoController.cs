@@ -183,45 +183,45 @@ namespace Final_Project_2._1.Controllers
             return View(movimentos);
         }
 
-        [HttpGet]
-        // [ResponseCache(Duration = 10, Location = ResponseCacheLocation.Any)]
-        public async Task<IActionResult> ListaMovimentos()
-        {
-            // ViewBag.DTmsg = DateTime.Now.ToString();
+        //[HttpGet]
+        //// [ResponseCache(Duration = 10, Location = ResponseCacheLocation.Any)]
+        //public async Task<IActionResult> ListaMovimentos()
+        //{
+        //    // ViewBag.DTmsg = DateTime.Now.ToString();
 
-            Movimentos movimentos= new Movimentos();
+        //    Movimentos movimentos= new Movimentos();
 
-            var colecao = await movimentos.GetMovimentos();
+        //    var colecao = await movimentos.GetMovimentos();
 
-            if (colecao == null)
-            {
-                return NotFound();
-            }
+        //    if (colecao == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return View(colecao);
-        }
+        //    return View(colecao);
+        //}
 
 
-        //PAREI AQUI
-        [HttpGet]
-        public async Task<IActionResult> Details(int id)
-        {
-            Movimentos movimentos = new Movimentos();
 
-            var movimento = await movimentos.GetMovimento(id);
+        //[HttpGet]
+        //public async Task<IActionResult> Details(int id)
+        //{
+        //    Movimentos movimentos = new Movimentos();
 
-            if (movimento == null)
-            {
-                return NotFound();
-            }
+        //    var movimento = await movimentos.GetMovimento(id);
 
-            return View(movimento);
-        }
+        //    if (movimento == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return View(movimento);
+        //}
 
         // invocado quando chamamos a página com o form de criação
 
-        [HttpGet, ActionName("Create")]
-        public IActionResult Create()
+        [HttpGet, ActionName("AddSaldo")]
+        public IActionResult AddSaldo()
         {
             Movimento movimento = new Movimento();
 
@@ -231,12 +231,12 @@ namespace Final_Project_2._1.Controllers
         // chamado de volta quando os dados são introduzidos no form, e é passado novamente ao controlador
         // o Url faz automaticamente o bind desses dados ao modelo Cliente
 
-        [HttpPost, ActionName("Create")]
-        public async Task<IActionResult> Create(Movimento movimento)
+        [HttpPost, ActionName("AddSaldo")]
+        public async Task<IActionResult> AddSaldo(Movimento movimento)
         {
             Movimentos movimentos = new Movimentos();
 
-            if (await movimentos.Adiciona_Mov(movimento) == true)
+            if (await movimentos.Adiciona_Saldo(movimento) == true)
             {
                 return RedirectToAction("Index");
             }
@@ -244,17 +244,45 @@ namespace Final_Project_2._1.Controllers
             return View();
         }
 
+        //[HttpGet]
+        //public async Task<IActionResult> Edit(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    Movimentos movimentos = new Movimentos();
+
+        //    var movimento = await movimentos.GetMovimento((int)id);
+
+        //    if (movimento == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return View(movimento);
+        //}
+
+        //[HttpPost, ActionName("Edit")]
+        //public async Task<IActionResult> Edit(int id, Movimento movimento)
+        //{
+        //    Movimentos movimentos = new Movimentos();
+
+        //    if (await movimentos.Actualiza_Mov(id, movimento) == true)
+        //    {
+        //        return RedirectToAction(nameof(this.Index));
+        //    }
+
+        //    return View();
+        //}
+
         [HttpGet]
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> AddConsumo()
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
 
-            Movimentos movimentos = new Movimentos();
+            Movimento movimento = new Movimento();
 
-            var movimento = await movimentos.GetMovimento((int)id);
 
             if (movimento == null)
             {
@@ -264,55 +292,21 @@ namespace Final_Project_2._1.Controllers
             return View(movimento);
         }
 
-        [HttpPost, ActionName("Edit")]
-        public async Task<IActionResult> Edit(int id, Movimento movimento)
+
+        [HttpPost, ActionName("AddConsumo")]
+        public async Task<IActionResult> AddConsumo(Movimento movimento)
         {
             Movimentos movimentos = new Movimentos();
 
-            if (await movimentos.Actualiza_Mov(id, movimento) == true)
+            if (await movimentos.Adiciona_Consumo(movimento) == true)
             {
-                return RedirectToAction(nameof(this.Index));
+                return RedirectToAction("Index");
             }
 
             return View();
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            Movimentos movimentos = new Movimentos();
-
-            var movimento = await movimentos.GetMovimento((int)id);
-
-            if (movimento == null)
-            {
-                return NotFound();
-            }
-
-            return View(movimento);
-        }
-
-        // permite fazer um POST com o método Delete, routeando depois para o método local DeleteConfirmed
-        // alternativamente, poderíamos denominar este método Delete (que já existe acima)
-        // ou invocar o método DeleteConfirmed externamente
-
-        [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            Movimentos movimentos = new Movimentos();
-
-            if (await movimentos.Elimina_Mov(id) == false)
-            {
-                return Problem("Movimento não encontrado");
-            }
 
             // redireciona a View devolvida pelo método acima
-            return RedirectToAction(nameof(this.Index));
+            //return RedirectToAction(nameof(this.Index));
         }
     }
 }

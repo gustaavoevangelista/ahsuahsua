@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Final_Project_2._1.Models.Movimento>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Movimento";
 }
 
 <h1>Movimentos</h1>
@@ -9,7 +9,9 @@
 <br />
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="AddSaldo">Adicionar saldo</a> 
+    <br />
+    <a asp-action="AddConsumo">Adicionar consumo</a>
 </p>
 
 <br />
@@ -18,7 +20,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Clientes)
+                @Html.DisplayNameFor(model => model.Cliente.id)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Data_hora)
@@ -33,19 +35,20 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Clientes.id)
+                @Html.DisplayFor(modelItem => item.Cliente.id)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Data_hora)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Importancia)
+                @Html.DisplayFor(modelItem => item.Importancia) €
             </td>
-            <td>
+
+            @*<td>
                 <a asp-action="Edit" asp-route-id="@item.Id_mov">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id_mov">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id_mov">Delete</a>
-            </td>
+            </td>*@
         </tr>
 }
     </tbody>

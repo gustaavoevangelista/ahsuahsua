@@ -8,77 +8,77 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Final_Project_2._1
 build_property.RootNamespace = Final_Project_2._1
-build_property.ProjectDir = c:\Users\gusta\PROJETOS\C#\Final_Project_2.1\Final_Project_2.1\
+build_property.ProjectDir = C:\Users\gusta\PROJETOS\C#\Final_Project_2.1\Final_Project_2.1\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\gusta\PROJETOS\C#\Final_Project_2.1\Final_Project_2.1
+build_property.MSBuildProjectDirectory = C:\Users\gusta\PROJETOS\C#\Final_Project_2.1\Final_Project_2.1
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Cliente/Create.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Cliente/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Cliente/Delete.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Cliente/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Cliente/Details.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Cliente/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Cliente/Edit.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Cliente/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Cliente/Index.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Cliente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Home/Index.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Home/Privacy.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Movimento/AddConsumo.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Movimento/AddConsumo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvXEFkZENvbnN1bW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Movimento/AddSaldo.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvXEFkZFNhbGRvLmNzaHRtbA==
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Movimento/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Movimento/Details.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Movimento/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Movimento/Edit.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Movimento/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Movimento/Index.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Movimento/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Shared/Error.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/_ViewImports.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/_ViewStart.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Shared/_Layout.cshtml]
+[C:/Users/gusta/PROJETOS/C\#/Final_Project_2.1/Final_Project_2.1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-18gohjvhye

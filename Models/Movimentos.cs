@@ -11,25 +11,25 @@ namespace Final_Project_2._1.Models
         }
 
 
-        public async Task<List<Movimento>> GetMovimentos()
-        {
-            List<Movimento> movimentosLista = null;
+        //public async Task<List<Movimento>> GetMovimentos()
+        //{
+        //    List<Movimento> movimentosLista = null;
 
-            try
-            {
-                using (var dbContext = new MyDbContext())
-                {
-                    movimentosLista = await dbContext.Movimentos.ToListAsync();
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex.ToString());
-                return null;
-            }
+        //    try
+        //    {
+        //        using (var dbContext = new MyDbContext())
+        //        {
+        //            movimentosLista = await dbContext.Movimentos.ToListAsync();
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Debug.WriteLine(ex.ToString());
+        //        return null;
+        //    }
 
-            return movimentosLista;
-        }
+        //    return movimentosLista;
+        //}
 
         public async Task<Movimento> GetMovimento(int iId)
         {
@@ -51,7 +51,7 @@ namespace Final_Project_2._1.Models
             return movimento;
         }
 
-        public async Task<bool> Adiciona_Mov(Movimento movimento)
+        public async Task<bool> Adiciona_Saldo(Movimento movimento)
         {
             if (movimento == null)
                 return false;
@@ -73,9 +73,9 @@ namespace Final_Project_2._1.Models
             return true;
         }
 
-        public async Task<bool> Elimina_Mov(int iId)
+        //Adicionar consumo com valor negativo //////PAREI AQUI
+        public async Task<bool> Adiciona_Consumo(Movimento movimento)
         {
-            var movimento = await GetMovimento(iId);
 
             if (movimento == null)
                 return false;
@@ -84,7 +84,7 @@ namespace Final_Project_2._1.Models
             {
                 using (var dbContext = new MyDbContext())
                 {
-                    dbContext.Movimentos.Remove(movimento);
+                    await dbContext.Movimentos.AddAsync(movimento);
                     await dbContext.SaveChangesAsync();
                 }
             }
@@ -97,34 +97,34 @@ namespace Final_Project_2._1.Models
             return true;
         }
 
-        public async Task<bool> Actualiza_Mov(int iId, Movimento movimentoActualizado)
-        {
-            var movimentoDB = await GetMovimento(iId);
+        //public async Task<bool> Actualiza_Mov(int iId, Movimento movimentoActualizado)
+        //{
+        //    var movimentoDB = await GetMovimento(iId);
 
-            if (movimentoDB == null)
-                return false;
+        //    if (movimentoDB == null)
+        //        return false;
 
-            movimentoDB.Data_hora = movimentoActualizado.Data_hora;
-            movimentoDB.Importancia = movimentoActualizado.Importancia;
+        //    movimentoDB.Data_hora = movimentoActualizado.Data_hora;
+        //    movimentoDB.Importancia = movimentoActualizado.Importancia;
             
         
 
-            try
-            {
-                using (var dbContext = new MyDbContext())
-                {
-                    dbContext.Movimentos.Update(movimentoDB);
-                    await dbContext.SaveChangesAsync();
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex.ToString());
-                return false;
-            }
+        //    try
+        //    {
+        //        using (var dbContext = new MyDbContext())
+        //        {
+        //            dbContext.Movimentos.Update(movimentoDB);
+        //            await dbContext.SaveChangesAsync();
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Debug.WriteLine(ex.ToString());
+        //        return false;
+        //    }
 
-            return true;
-        }
+        //    return true;
+        //}
     }
 
     
